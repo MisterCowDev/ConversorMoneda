@@ -23,20 +23,4 @@ public class ExchangeRateService {
         }
     }
 
-
-    /*
-
-    public ExchangeRateResponse getExchangeRates() throws IOException, InterruptedException {
-
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(API_URL))
-                .build();
-
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-
-        Gson gson = new Gson();
-        return gson.fromJson(response.body(), ExchangeRateResponse.class);
-    }
-    */
 }
